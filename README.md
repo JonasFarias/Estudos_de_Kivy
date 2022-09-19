@@ -27,3 +27,15 @@ as propriedades width e size_hint dos filhos e utilizará o tamanho padrão.
 
 
 ![img_1.png](img_1.png)
+
+
+# AnchorLayout
+
+
+
+# FloatLayout
+
+
+# StackLayout
+
+# SlideView
