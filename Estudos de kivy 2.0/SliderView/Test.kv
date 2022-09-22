@@ -1,0 +1,21 @@
+Scroller_Func:
+
+<Scroller_Func@ScrollView>:
+# define a distancia da barra da borda
+    bar_margin: 5
+    # usa padrão de cor RGB valor max 1
+    bar_color: 1,.0,.0,1
+    # controla a grossura da barra
+    bar_width: 10
+    bar_inactive_color: 0,0,1,1
+    bar_pos_y: 'left'
+    Stack:
+        size_hint: 1, None
+        #define o limite da barra aos ultimos itens
+        height: self.minimum_height
+
+
+<Stack>:
+# espaçamento das bordas
+# left, top, rigth, bottom
+    padding: [40,4,0,0]
