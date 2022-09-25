@@ -1,0 +1,16 @@
+LogicalInterface:
+<LogicalInterface>:
+    orientation: "vertical"
+    Button:
+        text:'Press'
+        # ação para quando clicar no botão
+        on_press:root.OnPressing(Label, input)
+        # acção para quando solta o click do botão
+        on_release:root.OnRelease(Label, input)
+    Label:
+        id: Label
+        text: 'heloo'
+    TextInput:
+        id: input
+        multiline: False
+        text: ""

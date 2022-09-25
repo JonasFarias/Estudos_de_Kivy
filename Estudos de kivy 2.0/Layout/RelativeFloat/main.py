@@ -1,10 +1,20 @@
 from kivy.app import App
 from kivy.uix.button import Button
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.stacklayout import StackLayout
+
+
+class Relative_Pratice(FloatLayout):
+    pass
+
+
+class Interface(FloatLayout):
+    pass
 
 
 class Scroller_Func():
     pass
+
 
 class Stack(StackLayout):
     def __init__(self, **kwargs):
@@ -15,7 +25,10 @@ class Stack(StackLayout):
 
 
 
+
 # App Creation
+
+
 class TestApp(App):
     pass
 
