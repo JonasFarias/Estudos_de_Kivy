@@ -29,11 +29,18 @@ class LogicalInterface(BoxLayout):
         print('ah')
 
 
-
+class Binding(BoxLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        b1 = Button(text='Texto')
+        b1.bind(on_press=self.callback_funt)
+        self.add_widget(b1)
+    def callback_funt(self, event):
+        print('Foi')
 
 class TestApp(App):
     def build(self):
-        return ExternalKv()
+        return Binding()
 
 
 TestApp().run()

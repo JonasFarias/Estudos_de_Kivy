@@ -1,0 +1,28 @@
+Game:
+    orientation: 'vertical'
+    ScrollView:
+        Buttons:
+            id: Stacker
+            size_hint: 1, None
+            height: self.minimum_height
+
+    BoxLayout:
+        size_hint: 1, .2
+        Button:
+            text: 'Create'
+            background_color: .3,.4,.5,1
+            background_normal: ""
+            on_press: root.Create_Btn(Stacker)
+
+        Button:
+            text: 'Delete'
+            on_press: root.Delete_Btn(Stacker)
+            background_color: .6,.7,.8,1
+            background_normal: ""
+
+<Buttons>:
+    padding: dp(10)
+    spacing: dp(10)
+
+
+<Game>:
