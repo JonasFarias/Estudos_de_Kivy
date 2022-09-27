@@ -1,0 +1,16 @@
+My_ScreenManager:
+<My_ScreenManager>:
+    ScreenManager:
+        id: sm
+        Screen:
+            name: 'first'
+            Button:
+                size_hint: 1, .5
+                text: 'botão 1'
+                on_press: root.FirstBtn(sm)
+        Screen:
+            name: 'second'
+            Button:
+                size_hint: 1, .5
+                text: 'botão 2'
+                on_press: root.SecondBtn(sm)
