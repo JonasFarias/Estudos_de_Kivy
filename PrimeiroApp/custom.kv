@@ -1,0 +1,57 @@
+MyInterface:
+<MyInterface>:
+    ScreenManager:
+        id: sm
+        size: root.width, root.height
+        Screen:
+            name: "background_1"
+            Image:
+                source: "imagens/Background_1.png"
+        Screen:
+            name: "background_2"
+            Image:
+                source: "imagens/Background_2.png"
+        Screen:
+            name: "background_3"
+            Image:
+                source: "imagens/Background_3.png"
+    Image:
+        source: "imagens/Top_Bar.png"
+        size: 375, 115
+        pos: 0, root.height-115
+    Button:
+        size: 80.5, 75
+        pos: root.width/2-130.60, root.height-100
+        background_color: 1,1,1,0
+        on_press: root.Start_pressing(Star_img, sm)
+        on_release: root.Start_release(Star_img)
+
+        Image:
+            id: Star_img
+            source: "imagens/Start_Btn.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+    Button:
+        size: 80.5, 75
+        pos: root.width/2-40.20, root.height-100
+        background_color: 1,1,1,0
+        on_press: root.Stats_pressing(Stats_img, sm)
+        on_release: root.Stats_release(Stats_img)
+
+        Image:
+            id: Stats_img
+            source: "imagens/Stats_Btn.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+    Button:
+        size: 80.5, 75
+        pos: root.width/2+48.20, root.height-100
+        background_color: 1,1,1,0
+        on_press: root.Likes_pressing(Likes_img, sm)
+        on_release: root.Likes_release(Likes_img)
+
+        Image:
+            id: Likes_img
+            source: "imagens/Likes_Btn.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
